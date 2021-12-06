@@ -1,0 +1,160 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+head, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    color: black;
+    background-color: #222851;
+}
+input[type = button], input[type = text] {
+    color: #a7465d;
+}
+input[type = button], input[type = text], .top a {
+    margin: 20px;
+}
+input[type = button] {
+    background-color:#fb9041;
+    width: 90px;
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 10px 4px 5px rgba(0, 0, 0, 0.2);
+}
+input[type = text] {
+    width: 750px;
+    height: 40px;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+.header {
+    position: relative;
+    margin: 10px;
+}
+.top {
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+}
+.top li {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.homeButton {
+    width: 50px;
+    height: 40px;
+    color: #fb9041;
+    border-radius: 10px;
+    box-shadow: 10px 4px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerLink {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rightLink {
+    float: right;
+}
+.topMovies, .topShows, .topSearches {
+    width: 100%;
+    float: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+.movieCollection, .showCollection, .searchCollection {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie, .shows, .search {
+    width: 200px;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 4px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in;
+}
+.movie img, .shows img, .search img {
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+}
+.movie-info span, .movie .pop {
+    font-weight: bold;
+}
+.movie-info, .show-info, .movie .pop, .search_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem;
+    color: white;
+}
+
+.overview, .search_overview {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fb9041;
+    padding: 1rem;
+    border-radius: 10px;
+    max-height: 100%;
+    transform: translateY(105%);
+    transition: transform 0.5s ease-in-out;
+    font-size: 13px;
+}
+.movie:hover, .shows:hover, .search:hover {
+    transform: scale(1.10);
+}
+.movie:hover .overview, .shows:hover .overview, .search:hover .search_overview{
+    transform: translateY(0);
+}
+#selectors {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+.selector {
+    color: #a7465d;
+    padding: 10px 15px;
+    background-color: #fb9041;
+    border-radius: 60px;
+    margin: 6px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 10px 4px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.25s ease-in;
+}
+.selector:hover {
+    transform: scale(1.2);
+}
+.pages {
+    display: flex;
+    margin: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    color: #a7465d;
+}
+.page {
+    padding: 10px;
+    
+}

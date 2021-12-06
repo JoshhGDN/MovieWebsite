@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/searched.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title> Search Results </title>
+</head>
+<body class = "main">
+    <div class = "header">
+        <div class="top">
+            <!-- Left Link -->
+            <li> <a  class = "homeButton" href="index.html"><i class = "fa fa-home fa-2x"></i></a> </li>
+            <!-- Centered Link -->
+            <div class="centerLink">
+                <form id = "searchForm"> 
+                    <input type="text" value = " " id = "searchButton">
+                </form>
+            </div>
+            <!-- Right Link -->
+            <div class="rightLink">
+                <li> <input class = "movieNshow" type="button" value = "Movies" onclick="openMovies()"> </li>
+                <li> <input class = "movieNShow" type="button" value = "TV Shows" onclick="openShows()"> </li>
+            </div>
+        </div>
+    </div>
+    <header class = "topSearches"> Search Results </header>
+    <div class="body">
+        <div id = "selectors">
+            <div class="selector"> Action </div>
+            <div class="selector"> Adventure </div>
+            <div class="selector"> Sci-Fi </div>
+            <div class="selector"> Horror </div>
+        </div>
+        <div class = "searchCollection" id = "searchResults">
+            <div class="search">
+                <img src=" " alt="">
+                <div class="search_info">
+                    <h3>  </h3>
+                    <h3>  </h3>
+                    <span class="search_review"> </span>
+                </div>
+                <div class="search_overview">
+                </div>
+            </div>
+            <div class="search">
+                <img src=" " alt="">
+                <div class="search-info">
+                    <h3>  </h3>
+                    <h3>  </h3>
+                    <span class="search_review"> </span>
+                </div>
+                <div class="search_overview">
+                </div>
+            </div>
+            <div class="search">
+                <img src=" " alt="">
+                <div class="search-info">
+                    <h3>  </h3>
+                    <h3>  </h3>
+                    <span class="search_review"> </span>
+                </div>
+                <div class="search_overview">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<script src="./src/index.js"></script>
+</body>
+</html>
